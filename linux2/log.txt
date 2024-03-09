@@ -1,3 +1,0 @@
-2024-03-05T14:39:32.078+0530 [ERROR] Main: Failed to get response from the server, Get "http://localhost:20000/api/ping?peerID=12D3KooWKr8dEQiLXuKacxDCZiHePVEMpgjxk19C3QozuUVQcQHA": dial tcp 127.0.0.1:20000: connect: connection refused
-2024-03-05T14:39:32.078+0530 [ERROR] Main: Ping failed: message="Ping failed, Get "http://localhost:20000/api/ping?peerID=12D3KooWKr8dEQiLXuKacxDCZiHePVEMpgjxk19C3QozuUVQcQHA": dial tcp 127.0.0.1:20000: connect: connection refused"
-2024-03-05T16:15:44.037+0530 [INFO]  Main: Got all DID successfully
