@@ -1,0 +1,43 @@
+# syntax=docker/dockerfile:1
+
+# Build the application from source
+FROM golang:1.21-bullseye AS build-stage
+
+RUN apt-get update && \
+    apt-get install -y build-essential && \
+    apt-get install -y make && \
+    apt-get install -y libc6
+
+WORKDIR /app
+
+COPY . .
+
+# Build the application
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o linux1/rubixgoplatform
+
+# Move testswarm.key and swarm.key to the linux1 folder
+RUN cp swarm.key linux1/ && cp oneclickquorum.sh linux1 && cp ipfs linux1/ &&  cp swarm.key linux1/testswarm.key
+RUN touch linux1/rubix.log
+
+# Deploy the application binary into a lean image
+FROM ubuntu:20.04 AS build-release-stage
+
+WORKDIR /
+
+COPY --from=build-stage /app/linux1 /linux1
+
+RUN apt-get update && apt-get install -y screen
+
+EXPOSE 20000
+EXPOSE 20001
+EXPOSE 20002
+EXPOSE 20003
+EXPOSE 20004
+EXPOSE 20005
+EXPOSE 20006
+EXPOSE 20007
+EXPOSE 20008
+EXPOSE 20009
+
+# CMD ["/linux1/oneclickquorum.sh"]
+CMD ["/bin/sh", "-c", "/linux1/rubixgoplatform && tail -f /dev/null"]

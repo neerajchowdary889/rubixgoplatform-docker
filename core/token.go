@@ -2,77 +2,138 @@ package core
 
 import (
 	"bytes"
-	"encoding/base64"
-	"encoding/json"
 	"fmt"
+	"net/http"
 	"time"
 
+	"github.com/rubixchain/rubixgoplatform/block"
+	"github.com/rubixchain/rubixgoplatform/core/ipfsport"
 	"github.com/rubixchain/rubixgoplatform/core/model"
-	"github.com/rubixchain/rubixgoplatform/core/util"
 	"github.com/rubixchain/rubixgoplatform/core/wallet"
+	"github.com/rubixchain/rubixgoplatform/rac"
+	"github.com/rubixchain/rubixgoplatform/token"
+	"github.com/rubixchain/rubixgoplatform/util"
+	"github.com/rubixchain/rubixgoplatform/wrapper/ensweb"
 )
 
 type TokenPublish struct {
 	Token string `json:"token"`
 }
 
-func (c *Core) getTokens(did string, amount float64) ([]string, []string, bool) {
-	return nil, nil, true
+type TCBSyncRequest struct {
+	Token     string `json:"token"`
+	TokenType int    `json:"token_type"`
+	BlockID   string `json:"block_id"`
 }
 
-func (c *Core) removeTokens(did string, wholeTokens []string, partTokens []string) error {
-	// ::TODO:: remove the tokens from the bank
-	return nil
+type TCBSyncReply struct {
+	Status      bool     `json:"status"`
+	Message     string   `json:"message"`
+	NextBlockID string   `json:"next_block_id"`
+	TCBlock     [][]byte `json:"tc_block"`
 }
 
-func (c *Core) releaseTokens(did string, wholeTokens []string, partTokens []string) error {
-	// ::TODO:: releae the tokens which is lokced for the transaction
-	return nil
+func (c *Core) SetupToken() {
+	c.l.AddRoute(APISyncTokenChain, "POST", c.syncTokenChain)
 }
 
-func (c *Core) GetAccountInfo(did string) (*model.RBTInfo, error) {
-	wt, err := c.w.GetAllWholeTokens(did)
-	if err != nil {
-		c.log.Error("Failed to get tokens", "err", err)
-		return nil, fmt.Errorf("Failed to get tokens")
-	}
-	pt, err := c.w.GetAllPartTokens(did)
-	if err != nil {
-		c.log.Error("Failed to get tokens", "err", err)
-		return nil, fmt.Errorf("Failed to get tokens")
-	}
-	info := &model.RBTInfo{
+func (c *Core) GetAllTokens(did string, tt string) (*model.TokenResponse, error) {
+	tr := &model.TokenResponse{
 		BasicResponse: model.BasicResponse{
 			Status:  true,
-			Message: "RBT accoutn info",
+			Message: "Got all tokens",
 		},
+	}
+	switch tt {
+	case model.RBTType:
+		tkns, err := c.w.GetAllTokens(did)
+		if err != nil {
+			return tr, nil
+		}
+		tr.TokenDetials = make([]model.TokenDetial, 0)
+		for _, t := range tkns {
+			td := model.TokenDetial{
+				Token:  t.TokenID,
+				Status: t.TokenStatus,
+			}
+			tr.TokenDetials = append(tr.TokenDetials, td)
+		}
+	case model.DTType:
+		tkns, err := c.w.GetAllDataTokens(did)
+		if err != nil {
+			return tr, nil
+		}
+		tr.TokenDetials = make([]model.TokenDetial, 0)
+		for _, t := range tkns {
+			td := model.TokenDetial{
+				Token:  t.TokenID,
+				Status: t.TokenStatus,
+			}
+			tr.TokenDetials = append(tr.TokenDetials, td)
+		}
+	case model.NFTType:
+		tkns := c.w.GetAllNFT(did)
+		if tkns == nil {
+			return tr, nil
+		}
+		tr.TokenDetials = make([]model.TokenDetial, 0)
+		for _, t := range tkns {
+			td := model.TokenDetial{
+				Token:  t.TokenID,
+				Status: t.TokenStatus,
+			}
+			tr.TokenDetials = append(tr.TokenDetials, td)
+		}
+	default:
+		tr.BasicResponse.Status = false
+		tr.BasicResponse.Message = "Invalid token type"
+	}
+	return tr, nil
+}
+
+func (c *Core) GetAccountInfo(did string) (model.DIDAccountInfo, error) {
+	wt, err := c.w.GetAllTokens(did)
+	if err != nil && err.Error() != "no records found" {
+		c.log.Error("Failed to get tokens", "err", err)
+		return model.DIDAccountInfo{}, fmt.Errorf("failed to get tokens")
+	}
+	info := model.DIDAccountInfo{
+		DID: did,
 	}
 	for _, t := range wt {
 		switch t.TokenStatus {
 		case wallet.TokenIsFree:
-			info.WholeRBT++
+			info.RBTAmount = info.RBTAmount + t.TokenValue
 		case wallet.TokenIsLocked:
-			info.LockedWholeRBT++
+			info.LockedRBT = info.LockedRBT + t.TokenValue
 		case wallet.TokenIsPledged:
-			info.PledgedWholeRBT++
-		}
-	}
-	for _, t := range pt {
-		switch t.TokenStatus {
-		case wallet.TokenIsFree:
-			info.PartRBT++
-		case wallet.TokenIsLocked:
-			info.LockedPartRBT++
-		case wallet.TokenIsPledged:
-			info.PledgedPartRBT++
+			info.PledgedRBT = info.PledgedRBT + t.TokenValue
 		}
 	}
 	return info, nil
 }
 
-func (c *Core) GenerateTestTokens(reqID string, num int, did string) error {
+func (c *Core) GenerateTestTokens(reqID string, num int, did string) {
+	err := c.generateTestTokens(reqID, num, did)
+	br := model.BasicResponse{
+		Status:  true,
+		Message: "DID registered successfully",
+	}
+	if err != nil {
+		br.Status = false
+		br.Message = err.Error()
+	}
+	dc := c.GetWebReq(reqID)
+	if dc == nil {
+		c.log.Error("Failed to get did channels")
+		return
+	}
+	dc.OutChan <- &br
+}
+
+func (c *Core) generateTestTokens(reqID string, num int, did string) error {
 	if !c.testNet {
-		return fmt.Errorf("This operation only avialable in test net")
+		return fmt.Errorf("generate test token is available in test net")
 	}
 	dc, err := c.SetupDID(reqID, did)
 	if err != nil {
@@ -80,82 +141,92 @@ func (c *Core) GenerateTestTokens(reqID string, num int, did string) error {
 	}
 
 	for i := 0; i < num; i++ {
-		m := make(map[string]string)
-		m["timeStamp"] = time.Now().String()
-		mb, err := json.Marshal(m)
-		if err != nil {
-			c.log.Error("Failed to do json marshal (timestamp)", "err", err)
-			return fmt.Errorf("failed to do json marshal")
+
+		rt := &rac.RacType{
+			Type:        rac.RacTestTokenType,
+			DID:         did,
+			TotalSupply: 1,
+			TimeStamp:   time.Now().String(),
 		}
-		rb := util.GetRandBytes(16)
 
-		rac := make(map[string]interface{})
-		rac[wallet.RACTypeKey] = wallet.RACTestTokenType
-		rac[wallet.RACVersionKey] = wallet.RACTestTokenVersion
-		rac[wallet.RACDidKey] = did
-		rac[wallet.RACTotalSupplyKey] = 1
-		rac[wallet.RACTokenCountKey] = 1
-		rac[wallet.RACCreatorInputKey] = string(mb)
-		rac[wallet.RACNonceKey] = base64.RawURLEncoding.EncodeToString(rb)
-
-		ha, err := wallet.RAC2Hash(rac)
+		r, err := rac.CreateRac(rt)
 		if err != nil {
-			c.log.Error("Failed to calculate rac hash", "err", err)
+			c.log.Error("Failed to create rac block", "err", err)
+			return fmt.Errorf("failed to create rac block")
+		}
+
+		// Assuming bo block token creation
+		// ha, err := r[0].GetHash()
+		// if err != nil {
+		// 	c.log.Error("Failed to calculate rac hash", "err", err)
+		// 	return err
+		// }
+		// sig, err := dc.PvtSign([]byte(ha))
+		// if err != nil {
+		// 	c.log.Error("Failed to get rac signature", "err", err)
+		// 	return err
+		// }
+		err = r[0].UpdateSignature(dc)
+		if err != nil {
+			c.log.Error("Failed to update rac signature", "err", err)
 			return err
 		}
-		sig, err := dc.PvtSign(ha)
-		if err != nil {
-			c.log.Error("Failed to get rac signature", "err", err)
-			return err
-		}
-		rac[wallet.RACSignKey] = base64.RawURLEncoding.EncodeToString(sig)
 
-		tb, err := json.Marshal(rac)
-		if err != nil {
-			c.log.Error("Failed to convert rac to json string", "err", err)
+		tb := r[0].GetBlock()
+		if tb == nil {
+			c.log.Error("Failed to get rac block")
 			return err
 		}
-		nb := bytes.NewBuffer(tb)
-		id, err := c.ipfs.Add(nb)
+		tk := util.HexToStr(tb)
+		nb := bytes.NewBuffer([]byte(tk))
+		id, err := c.w.Add(nb, did, wallet.OwnerRole)
 		if err != nil {
 			c.log.Error("Failed to add token to network", "err", err)
 			return err
 		}
-
-		tc := make(map[string]interface{})
-
-		rb = util.GetRandBytes(16)
-
-		tc[wallet.TCTransTypeKey] = wallet.TokenGeneratedType
-		tc[wallet.TCOwnerKey] = did
-		tc[wallet.TCCommentKey] = "Token generated at " + time.Now().String()
-		tc[wallet.TCTokenIDKey] = id
-		tc[wallet.TCNonceKey] = base64.RawURLEncoding.EncodeToString(rb)
-
-		hash, err := wallet.TC2HashString(tc)
-
-		if err != nil {
-			c.log.Error("Failed to calculate token chain hash", "err", err)
-			return err
+		gb := &block.GenesisBlock{
+			Type: block.TokenGeneratedType,
+			Info: []block.GenesisTokenInfo{
+				{Token: id},
+			},
 		}
-		tc[wallet.TCBlockHashKey] = hash
-
-		_, sig, err = dc.Sign(hash)
-		if err != nil {
-			c.log.Error("Failed to get did signature", "err", err)
-			return fmt.Errorf("Failed to get did signature")
+		ti := &block.TransInfo{
+			Tokens: []block.TransTokens{
+				{
+					Token:     id,
+					TokenType: token.TestTokenType,
+				},
+			},
 		}
 
-		tc[wallet.TCSignatureKey] = util.HexToStr(sig)
+		tcb := &block.TokenChainBlock{
+			TransactionType: block.TokenGeneratedType,
+			TokenOwner:      did,
+			GenesisBlock:    gb,
+			TransInfo:       ti,
+		}
 
+		ctcb := make(map[string]*block.Block)
+		ctcb[id] = nil
+
+		blk := block.CreateNewBlock(ctcb, tcb)
+
+		if blk == nil {
+			c.log.Error("Failed to create new token chain block")
+			return fmt.Errorf("failed to create new token chain block")
+		}
+		err = blk.UpdateSignature(dc)
+		if err != nil {
+			c.log.Error("Failed to update did signature", "err", err)
+			return fmt.Errorf("failed to update did signature")
+		}
 		t := &wallet.Token{
-			TokenID:      id,
-			TokenDetials: string(tb),
-			DID:          did,
-			TokenChainID: hash,
-			TokenStatus:  wallet.TokenIsFree,
+			TokenID:     id,
+			DID:         did,
+			TokenValue:  1,
+			TokenStatus: wallet.TokenIsFree,
 		}
-		err = c.w.AddLatestTokenBlock(id, tc)
+		err = c.w.CreateTokenBlock(blk)
 		if err != nil {
 			c.log.Error("Failed to add token chain", "err", err)
 			return err
@@ -169,12 +240,93 @@ func (c *Core) GenerateTestTokens(reqID string, num int, did string) error {
 	return nil
 }
 
-func (c *Core) tokenStatusCallback(peerID string, data []byte) {
-	// c.log.Debug("Recevied token status request")
-	// var tp TokenPublish
-	// err := json.Unmarshal(data, &tp)
-	// if err != nil {
-	// 	return
-	// }
-	// c.log.Debug("Token recevied", "token", tp.Token)
+func (c *Core) syncTokenChain(req *ensweb.Request) *ensweb.Result {
+	var tr TCBSyncRequest
+	err := c.l.ParseJSON(req, &tr)
+	if err != nil {
+		return c.l.RenderJSON(req, &TCBSyncReply{Status: false, Message: "Failed to parse request"}, http.StatusOK)
+	}
+	blks, nextID, err := c.w.GetAllTokenBlocks(tr.Token, tr.TokenType, tr.BlockID)
+	if err != nil {
+		return c.l.RenderJSON(req, &TCBSyncReply{Status: false, Message: err.Error()}, http.StatusOK)
+	}
+	return c.l.RenderJSON(req, &TCBSyncReply{Status: true, Message: "Got all blocks", TCBlock: blks, NextBlockID: nextID}, http.StatusOK)
 }
+
+func (c *Core) syncTokenChainFrom(p *ipfsport.Peer, pblkID string, token string, tokenType int) error {
+	// p, err := c.getPeer(address)
+	// if err != nil {
+	// 	c.log.Error("Failed to get peer", "err", err)
+	// 	return err
+	// }
+	// defer p.Close()
+	var err error
+	blk := c.w.GetLatestTokenBlock(token, tokenType)
+	blkID := ""
+	if blk != nil {
+		blkID, err = blk.GetBlockID(token)
+		if err != nil {
+			c.log.Error("Failed to get block id", "err", err)
+			return err
+		}
+		if blkID == pblkID {
+			return nil
+		}
+	}
+	tr := TCBSyncRequest{
+		Token:     token,
+		TokenType: tokenType,
+		BlockID:   blkID,
+	}
+	for {
+		var trep TCBSyncReply
+		err = p.SendJSONRequest("POST", APISyncTokenChain, nil, &tr, &trep, false)
+		if err != nil {
+			c.log.Error("Failed to sync token chain block", "err", err)
+			return err
+		}
+		if !trep.Status {
+			c.log.Error("Failed to sync token chain block", "msg", trep.Message)
+			return fmt.Errorf(trep.Message)
+		}
+		for _, bb := range trep.TCBlock {
+			blk := block.InitBlock(bb, nil)
+			if blk == nil {
+				c.log.Error("Failed to add token chain block, invalid block, sync failed", "err", err)
+				return fmt.Errorf("failed to add token chain block, invalid block, sync failed")
+			}
+			err = c.w.AddTokenBlock(token, blk)
+			if err != nil {
+				c.log.Error("Failed to add token chain block, syncing failed", "err", err)
+				return err
+			}
+		}
+		if trep.NextBlockID == "" {
+			break
+		}
+		tr.BlockID = trep.NextBlockID
+	}
+	return nil
+}
+
+func (c *Core) getFromIPFS(path string) ([]byte, error) {
+	rpt, err := c.ipfs.Cat(path)
+	if err != nil {
+		c.log.Error("failed to get from ipfs", "err", err, "path", path)
+		return nil, err
+	}
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(rpt)
+	b := buf.Bytes()
+	return b, nil
+}
+
+// func (c *Core) tokenStatusCallback(peerID string, topic string, data []byte) {
+// 	// c.log.Debug("Recevied token status request")
+// 	// var tp TokenPublish
+// 	// err := json.Unmarshal(data, &tp)
+// 	// if err != nil {
+// 	// 	return
+// 	// }
+// 	// c.log.Debug("Token recevied", "token", tp.Token)
+// }

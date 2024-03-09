@@ -1,0 +1,531 @@
+2023-12-12T16:26:27.801+0530 [INFO]  Main.Core: Initializing IPFS
+2023-12-12T16:26:31.422+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-12T16:26:31.442+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-12T16:26:31.442+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-12T16:26:31.442+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-12T16:26:31.442+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-12T16:26:31.442+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-12T16:26:31.486+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.225.230/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:4073:219d:99c5:30f2:834:2235:27d/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:4073:219d:99c5:f254:469:4721:58be/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.225.230/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:4073:219d:99c5:f254:469:4721:58be/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-12T16:26:36.528+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-12T16:26:38.541+0530 [INFO]  Main.Core: IPFS daemon requested to close
+2023-12-12T16:26:38.541+0530 [INFO]  Main.Core: IPFS daemon finished
+2023-12-12T16:26:38.552+0530 [INFO]  Main.Core: IPFS Initialized
+2023-12-12T16:26:38.552+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-12T16:26:38.576+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-12T16:26:38.576+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-12T16:26:38.576+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-12T16:26:38.576+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-12T16:26:38.576+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-12T16:26:38.619+0530 [INFO]  Main.Core: 
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.225.230/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:4073:219d:99c5:30f2:834:2235:27d/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:4073:219d:99c5:f254:469:4721:58be/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.225.230/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:4073:219d:99c5:f254:469:4721:58be/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-12T16:26:43.629+0530 [INFO]  Main.Core: Setting up the core
+2023-12-12T16:26:43.630+0530 [INFO]  Main.Core: Starting the core
+2023-12-12T16:26:43.630+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-12T16:26:43.630+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-12T16:26:43.630+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-12T16:26:43.631+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-12T16:26:43.631+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-12T16:26:43.631+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-12T16:26:43.631+0530 [INFO]  Main: Starting server...
+2023-12-12T16:26:43.631+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-12T16:26:43.631+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-12T17:28:39.686+0530 [INFO]  Main.Rubixplatform: Shutting down...
+2023-12-12T17:28:42.688+0530 [INFO]  Main.Core: IPFS daemon requested to close
+2023-12-12T17:28:42.688+0530 [INFO]  Main.Core: IPFS daemon finished
+2023-12-12T17:28:42.699+0530 [INFO]  Main: Shutting down...
+2023-12-13T15:08:51.202+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-13T15:08:51.237+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-13T15:08:51.237+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-13T15:08:51.237+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-13T15:08:51.237+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-13T15:08:51.237+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core: 
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core: 
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-13T15:08:51.297+0530 [INFO]  Main.Core: 
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-13T15:08:56.310+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-13T15:08:56.311+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-13T15:08:56.311+0530 [INFO]  Main.Core: Setting up the core
+2023-12-13T15:08:56.313+0530 [INFO]  Main.Core: Starting the core
+2023-12-13T15:08:56.313+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-13T15:08:56.313+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-13T15:08:56.313+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-13T15:08:56.314+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-13T15:08:56.314+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-13T15:08:56.314+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-13T15:08:56.314+0530 [INFO]  Main: Starting server...
+2023-12-13T15:08:56.314+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-13T15:08:56.314+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-13T15:26:35.794+0530 [INFO]  Main.Rubixplatform: Shutting down...
+2023-12-13T15:26:38.796+0530 [INFO]  Main.Core: IPFS daemon requested to close
+2023-12-13T15:26:38.796+0530 [INFO]  Main.Core: IPFS daemon finished
+2023-12-13T15:26:38.806+0530 [INFO]  Main: Shutting down...
+2023-12-13T15:31:31.299+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-13T15:31:31.324+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-13T15:31:31.324+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-13T15:31:31.324+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-13T15:31:31.324+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-13T15:31:31.324+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-13T15:31:31.367+0530 [INFO]  Main.Core: 
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core: 
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-13T15:31:31.368+0530 [INFO]  Main.Core: 
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-13T15:31:36.382+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-13T15:31:36.383+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-13T15:31:36.383+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-13T15:31:36.383+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-13T15:31:36.384+0530 [INFO]  Main.Core: Setting up the core
+2023-12-13T15:31:36.385+0530 [INFO]  Main.Core: Starting the core
+2023-12-13T15:31:36.385+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-13T15:31:36.385+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-13T15:31:36.385+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-13T15:31:36.385+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-13T15:31:36.386+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-13T15:31:36.386+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-13T15:31:36.386+0530 [INFO]  Main: Starting server...
+2023-12-13T15:31:36.386+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-13T15:31:36.386+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-13T15:41:00.758+0530 [INFO]  Main.Rubixplatform: Shutting down...
+2023-12-13T15:41:03.759+0530 [INFO]  Main.Core: IPFS daemon requested to close
+2023-12-13T15:41:03.759+0530 [INFO]  Main.Core: IPFS daemon finished
+2023-12-13T15:41:03.770+0530 [INFO]  Main: Shutting down...
+2023-12-16T18:37:53.344+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-16T18:37:53.401+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-16T18:37:53.401+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-16T18:37:53.401+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-16T18:37:53.401+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-16T18:37:53.401+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-16T18:37:53.482+0530 [INFO]  Main.Core: 
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core: 
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-16T18:37:53.483+0530 [INFO]  Main.Core: 
+2023-12-16T18:37:58.519+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-16T18:37:58.519+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-16T18:37:58.520+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-16T18:37:58.530+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-16T18:37:58.530+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-16T18:37:58.533+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-16T18:37:58.533+0530 [INFO]  Main.Core: Setting up the core
+2023-12-16T18:37:58.537+0530 [INFO]  Main.Core: Starting the core
+2023-12-16T18:37:58.538+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-16T18:37:58.538+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-16T18:37:58.538+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-16T18:37:58.539+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-16T18:37:58.539+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-16T18:37:58.540+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-16T18:37:58.540+0530 [INFO]  Main: Starting server...
+2023-12-16T18:37:58.540+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-16T18:37:58.540+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-17T10:17:53.070+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-17T10:17:53.092+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-17T10:17:53.092+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-17T10:17:53.092+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-17T10:17:53.092+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-17T10:17:53.092+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-17T10:17:53.148+0530 [INFO]  Main.Core: 
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core: 
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-17T10:17:53.149+0530 [INFO]  Main.Core: 
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-17T10:17:53.173+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-17T10:17:53.174+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-17T10:17:53.175+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-17T10:17:53.175+0530 [INFO]  Main.Core: Setting up the core
+2023-12-17T10:17:53.178+0530 [INFO]  Main.Core: Starting the core
+2023-12-17T10:17:53.178+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-17T10:17:53.178+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-17T10:17:53.178+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-17T10:17:53.179+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-17T10:17:53.179+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-17T10:17:53.179+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-17T10:17:53.179+0530 [INFO]  Main: Starting server...
+2023-12-17T10:17:53.179+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-17T10:17:53.179+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-18T09:45:32.644+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-18T09:45:32.670+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-18T09:45:32.671+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-18T09:45:32.671+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-18T09:45:32.671+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-18T09:45:32.671+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-18T09:45:32.712+0530 [INFO]  Main.Core: 
+2023-12-18T09:45:32.712+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-18T09:45:32.713+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-18T09:45:32.713+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-18T09:45:32.713+0530 [INFO]  Main.Core: 
+2023-12-18T09:45:32.713+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-18T09:45:32.713+0530 [INFO]  Main.Core: 
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-18T09:45:37.737+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-18T09:45:37.738+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-18T09:45:37.738+0530 [INFO]  Main.Core: Setting up the core
+2023-12-18T09:45:37.746+0530 [INFO]  Main.Core: Starting the core
+2023-12-18T09:45:37.746+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-18T09:45:37.747+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-18T09:45:37.747+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-18T09:45:37.747+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-18T09:45:37.747+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-18T09:45:37.747+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-18T09:45:37.747+0530 [INFO]  Main: Starting server...
+2023-12-18T09:45:37.747+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-18T09:45:37.747+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-18T10:06:07.650+0530 [INFO]  Main.Core: DID : bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda, Time to create DID & Keys : 1m19.48204863s
+2023-12-18T10:28:58.353+0530 [DEBUG] Main.Core.wallet: did value passed inside is: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T10:28:58.353+0530 [DEBUG] Main.Core.wallet: db print DID: did=<nil>
+2023-12-18T10:28:58.353+0530 [DEBUG] Main.Core.wallet: GetDID: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T10:28:58.353+0530 [DEBUG] Main.Core: dt is: dt="&{bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda 0 root 0 }"
+2023-12-18T10:28:58.457+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmXmVZk1iciCawLcnYAjY1sEysV5So6xCuYDQF1y3GJNfA-0000000000000000-9ea7000dc25b9bda7cc7e9a85710062aebcd2b328a2638d4a18b8e273ca1cab2
+2023-12-18T10:30:18.753+0530 [DEBUG] Main.Core.wallet: did value passed inside is: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T10:30:18.753+0530 [DEBUG] Main.Core.wallet: db print DID: did=<nil>
+2023-12-18T10:30:18.753+0530 [DEBUG] Main.Core.wallet: GetDID: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T10:30:18.753+0530 [DEBUG] Main.Core: dt is: dt="&{bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda 0 root 0 }"
+2023-12-18T10:30:18.864+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmXLPdrg7yvsLFoSMJcsfRgLnyDZsRugi6ZBCsHEi2kF29-0000000000000000-9cd5cd5c887f77207d17183f900afc7a549b5b58a2c4e45f2828b642e27ef454
+2023-12-18T10:30:18.964+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmW9TTHrEPRahHHqEuT6GTqfJUmrHWyTdtJueA4VMgmDhm-0000000000000000-180b2594bb1ec49430e533e859d7ebbc204d14890432675258db55b1b4ae1b6b
+2023-12-18T10:30:19.067+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmfG8d7z5t2yRWDUexUuVYeK1VZd323cFUqFaU3tASR4gT-0000000000000000-6f53d74929537f2bfae1b097ccec5602320f2c693a538eb964453307a50e5e9e
+2023-12-18T10:30:19.173+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmVgUUphcD9w8EEiA6Fu613uRkSQ6wCpNwxxrgdsYgnCmf-0000000000000000-a732802005d63f848a8a79fd92f3046a514bce370e1757cee8a1081cb68d2b84
+2023-12-18T10:30:19.277+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmdn6Dnm9jtgD6a3PFVxTPgiPnD9xa2Ld1whFzEkTh8tDk-0000000000000000-4a3b045cab8abf10ae44e0b86b6e12439d0544b17a332b419d5989ba031e7a1d
+2023-12-18T10:30:19.382+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQd3DDdLGpPw2Ne8xpL6hinvYqHeuvJNYmqSBBuKK3Fsp-0000000000000000-28b5a3e833e1451acadaea391d178a7ad1993ba5d9a024bdef298cd6eb435d51
+2023-12-18T10:30:19.486+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmURESA9ogqNffChPsgvArDtmgZXhVQR73rYNwA5rc1x6R-0000000000000000-cd267f478c49210a01ad7b7b00b917652c5a904c01d842e206fa5c3e4b7de645
+2023-12-18T10:30:19.592+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNqpuaXXNzGSwBzYn4uBMtbK6zdqb1ZjtKhWPtNVamjgr-0000000000000000-0c0adb148513c870ee0e88953a39b840c542076f7d402ea417cc23c7df601606
+2023-12-18T10:30:19.698+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZNzX7NLdbcxGbXWrh5AGTSGkrZBoHyGhtu8Gz5Btz6nb-0000000000000000-02224f1ff15dc16064ff02757cce1374c9473b1a9a614fb084918b792b55ef41
+2023-12-18T10:30:19.803+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNuGyCewob81bMW5Ds235E3P6Lj4xvQaqWcTyjR94jQ51-0000000000000000-1155f49d6fa430cdb0216e77573bea9e9ea0ddb330a9e78274f3e1271c2f8f59
+2023-12-18T10:30:19.909+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQRDp5SAkwpbcaFbhRmnPEXLJdS6ApjbPR3Lk3VWm9Yuw-0000000000000000-43074b12933d4f021ac9253a4c2335d7178b48f252eae37675fec1e44c74d1ed
+2023-12-18T10:30:20.016+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmb6RLoXNUUkPTzkJL1ME8xVXcCiR2777Vu43WVMLHwNM5-0000000000000000-38841cc119112e7c002bdfc58cd9e6af0fd10a76dd7ddbbd9b32493c37ece26d
+2023-12-18T10:30:20.122+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWWxhVoJQyA93BJ5wjYiYSSkwiRphyZ4Xx6v5N3ABWjod-0000000000000000-ebeb28d4976a5eda2a5101cc2dc775d12b41b423425da028324547826a3a564a
+2023-12-18T10:30:20.227+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQHpwhs6M4jTZhEFfBnthBNQyJEzAQbnkYNxHdrPLNQwG-0000000000000000-228daecbcba9dc75666ad1a01308154182178a3e3508a2cdbb3c7bdb293483a1
+2023-12-18T10:30:20.384+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmfQAXhP8UV2gDN5BcJPi4HkJM5wQZgr4t5vQp75zgKsq9-0000000000000000-c59b92f2bd410dacf038ff9f4587dacb0874858f3e3273f9c4d88e0687b1573e
+2023-12-18T10:30:20.533+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmaHmJXSuPQroppTzk8SR2kGmonM64hMfDNLhmBrd38m2W-0000000000000000-1ab3ac8b604dd77c278c04268c6dd136ed52fdefc289947f5037a55c8d28ed7f
+2023-12-18T10:30:20.637+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmbn8VUqvN6QWxWpCx5TxxWHGtYjWv4AWaiV56TU8s4wxv-0000000000000000-8859b7531bdc8f2f2e6b836e4e6225d52d05342c019d6a7f4bc4c89a929e2b09
+2023-12-18T10:30:20.742+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmSQfKhTA8tD8ou4RmutgvkbAs2nafdbPi2nNakDDFnLgS-0000000000000000-1d33b9afd7d5dea820d55d45621828bff3eae6be07a6120ecccd8a44506b1efc
+2023-12-18T10:30:20.849+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYT7tWAx53ZnzYJJC4g99RuujTWpZUaqZrHpdK1eYiaQD-0000000000000000-9781c9e73c980dc2314f738aba5d08b6ee09258e31bb224cbf4d5f01af06ec1d
+2023-12-18T10:30:20.954+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmRLKg8gYPt2JsjZ7jUjXRowVwg3X7SCsS7xrDrZrKMrKk-0000000000000000-13669b2ada0a46aa5f718a89c72f75568e0c084147b335e9bb158ce1e2dd3851
+2023-12-18T10:30:21.061+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmXgKBdTnwhSQM8XoEkoLfhx2bSfDVsCgoQer1VqrtMJHT-0000000000000000-f63f9ccd01d5a73d8057f8cf2ffb41c6802f79dc410c9b743018493e9e2d635b
+2023-12-18T10:30:21.167+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmcnbxBePuAxvawZPsjrVDHAqryB5onjy41irKZhzu98ra-0000000000000000-8f4d7292568aa88abb883d3113fe19f04c7abbebb137dd6a4291b39d9ec34930
+2023-12-18T10:30:21.273+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmbCenmkQgT6Ad4vQjPA1zfo1B4qKnEXGiL5DmozNxwVz8-0000000000000000-04eec4a83534949bfbc0cfa4b91a2fdf278d0f229dd955f7732c3d12c20aaed2
+2023-12-18T10:30:21.371+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNaEwaD7WsKJR2TdXT6vrKJAnrQjmPi1TvHjiRVqHSMPV-0000000000000000-a82447f0f170827c80b0379a01b9d63b44f96f638ea66c493aa5373efece82df
+2023-12-18T10:30:21.483+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmPFMsZgJzohwtQF3M72Uk8Q5sD51oPT9NGmBzeVPEgDT4-0000000000000000-5c3187eca0a64ae00bdea7df57f5921df1c92fac98c4796004e53430ec149d17
+2023-12-18T10:30:21.589+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmdoYuG9fQaSFGoAXg36eEzjG12aCdZaMW1eyghH4Tix4T-0000000000000000-87a3ec266e13b0dffdecf76870267a923d0bcc025df5c680aa7e619d7da44a7f
+2023-12-18T10:30:21.687+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNrSkwJ5f8umioUWq4j5dLQVe6EV64uEHXBrFHKvPhmSw-0000000000000000-585497cf9a2e4f795fe8ea7ed6bd5861423bdf0835e3029121424f8868ef8965
+2023-12-18T10:30:21.791+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWX7PbXuYQ9EqPt2ZKsm7n2iaAzyarcaRemKdZiqzvmr4-0000000000000000-4480119795a623e9c44006b201696e210950e107c928ef433002321bfa1434b4
+2023-12-18T10:30:21.903+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmapuftf3m4L9haNqBBprBsWW2sih44uTXj9ZZDvgvfSRi-0000000000000000-d63ad3d778f12590e3fcf6ef668e2975919d48f84721cd5eb3538eb4f7d5d23f
+2023-12-18T10:30:22.010+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmdjQqFaZuTRWmgmtKDeBPNU6tQ98JyZwwLaV9viJGWBqb-0000000000000000-9e1a95bbf253512fd0206787b66c0ca808146b01e78adb31fcf0d8baf42fe8e5
+2023-12-18T10:30:22.119+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmUpT6nRaiMFraogdqEiQrtDLDX3ikG6UYXxftncQQeiZg-0000000000000000-805cc3ede1db5e580b80c25d5db89be6f624f95333c81310931b858798b94127
+2023-12-18T10:30:22.225+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZ2c4WJLE6oRjAfxS6bn6DdXJk5YnZ1Dw5BZTFKqwnSB1-0000000000000000-afc650932ed0c917281997d6db3229135e4d1d7de754b04b78c411e6a06d67cc
+2023-12-18T10:30:22.335+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYyDHGZd9JiDYPGFAALbf2eQgKoessgsm1iygF8qLxraW-0000000000000000-86b1b74dbfc51ff59035481585519da983afa10208e3d46ef15b10d45dd34c5e
+2023-12-18T10:30:22.440+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmeREkJzCZs7db57awzuUoHEQ5gnY57MRFgot9N3uKhHSi-0000000000000000-910840606b496039d7b7d03d8f1227b9154bcd96b4922fad0d0c7f2dc3eb9b38
+2023-12-18T10:30:22.550+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYBX7NLuE31CHJHo5jEDTQNDUAS4fUbG4fSjAw1kuVGqQ-0000000000000000-fbf2153c9968c1db6639f9cda672af976edf380f2f68aeb574cee93bd13d03a8
+2023-12-18T10:30:22.665+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmehCGutLfLnpVGvQiWi1BkJepViJ1pH9tPU2aVhhXgZtc-0000000000000000-0a7d7f26ad601029f97b6e32c19477d9ae59dccc713a6782a3faf7f8d23f14df
+2023-12-18T10:30:22.771+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmbJPrrpFNtCRvk6G16NQQaSH6DzB7TPeSNR88pRweD8SE-0000000000000000-63fb5470df54a29472de57ab819c20b363cb1e35588cee99590083f518f39d17
+2023-12-18T10:30:22.881+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQsLzLiTKBT6c1QpJCBRd2CVy9L5gqzn4xNWgDG2UeyCZ-0000000000000000-502627c4b019f4d4dd85237f3081b8058d1e0737429094cf96ad734efe5da5d5
+2023-12-18T10:30:22.988+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmSHi6AkgnibChXFLZWY3uthT5e2wCCn76ggoFDRywhAQ3-0000000000000000-72c7a76637ca99b8cb37020750f42b1791871e2d91b382563b00b48f15d5b30a
+2023-12-18T10:30:23.101+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZpLKEcVkZRsg7ZhRKNgTfq4vMYxXdS9sTVmzz4YEU4Ge-0000000000000000-0a83aa80c18a0a01f88b1a8ce38489581d2ec7b03bf9da182ada62d6db3788c2
+2023-12-18T10:30:23.206+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmeFjtpHnpF4ZwHy3JCg6N1vUcgmZGhyy6CaZSGNvnmnhU-0000000000000000-ddd135898c6f8dad754032f7450b187d8b5ca28f758de49f0e9832b1a8ea8df1
+2023-12-18T10:30:23.310+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmSa4zCcGbi1RAwKXBVdWsUNSp9r3jzNsuJjDoutSncUq2-0000000000000000-befd961dd435d5176b7369b462740f2f4d0910dfa6da7cefd4fcd0d0014bc35f
+2023-12-18T10:30:23.413+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQDeEirvnhyc4ScJjAnH3aQZsye7pcEhzWrzFi3S6F3vs-0000000000000000-7cd615395ef52acf24e83fbdf941f97c6f4a2870d8d2c5db134974bec46ba88b
+2023-12-18T10:30:23.518+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmTmR7Hy2esg9i1LBsvJ6iUgsCjYxa7sv9hLwz4cWQQSrL-0000000000000000-64270059d87712d1b9ec8eb60d74184201875541ed598eb1bd78791c75faac1a
+2023-12-18T10:30:23.623+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmcDe235Lo3NkhhFWFVpiK3oxUct2ho24A6j1CRpmscNof-0000000000000000-a5a21df6160ad203db62b0daffb4eac33392e47c7d5bdf38bd9f65c2608121b6
+2023-12-18T10:30:23.727+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQDyadVF2Uraxt5NoEWqwfd1NgheEJEyzT2dNJDjJGgXR-0000000000000000-021fa3c3aace946d22e5d9a898c54d92373049c1cbbcdb8b13265609ca75fc93
+2023-12-18T10:30:23.832+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmUgWyuBkavkjUxFrP972nzBbWkoL9nueDiAxmEHYR5XVA-0000000000000000-7b8afaf31909047d983d9904643483e1193ecf8082c6019c754ea1120680fd4a
+2023-12-18T10:30:23.936+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmdeHpqUqMjSvSGVU84gBRNTMDXkh5fQ4PLmT5ycBoKBcE-0000000000000000-6960b0702912b4c0e2cab28e9f1103342f11269a77e54b93222a74496d13f63a
+2023-12-18T10:30:24.039+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmeKKLUvew4rnHFo3z78iXXU3gMRRLfHP5uQ11em9vzHVQ-0000000000000000-31a9219ce904b8578025f9b3aa828c0b638e5be1b5269f90413905a28e650e9b
+2023-12-18T10:30:24.145+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmf7kw1mTxvdHQRyRPTxNK4hUqYv3ig1896Pmg1em5dr3q-0000000000000000-a0d9b43a44c36118c2d2992cf60ec790fcf7ad294831a30ad475a99351fca523
+2023-12-18T10:30:24.251+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmaLBkWrMdxktwQ94ugADNaxj7L5jZ6Sh4WqfxJwR1dRdq-0000000000000000-7b6a1e23cf962d85d1dc64a0d2567df231276ad5618a705ffebbcd8de6044239
+2023-12-18T10:30:24.361+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmS98P79ULmqLAgP1mxWw3U8wZbx8mrzirYSgdP3Mr7qtd-0000000000000000-73bdb1f4c4aa6155746f8b3ab99ed00ea60087693c1a14402214da79bef4ba46
+2023-12-18T10:30:24.461+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWkfzCPDL1pbYPkZcGbyaa7W8JBuhggxHskRZPdYPDoGM-0000000000000000-08df64de12cf378246ddd698102da85ca304c5d1383d843f616dcd317f48bae8
+2023-12-18T10:30:24.560+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYF9pFWGCsNeB9S6BkNbpMGsfPaGrGcEZRC4wJ5D8EFvu-0000000000000000-e7fe608213dc553bbab89df1dd2f56015562dbcc24d5368f15526593dd94eb27
+2023-12-18T10:30:24.671+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWdgidXBwRjJa1AwksQ9ZA9h51nJjuDPk9LyeiE1Az1kT-0000000000000000-fc00b254e19c1ecff2fd2cfb440676255a0482e77bfcdd159a5aca5a7f80de6a
+2023-12-18T10:30:24.774+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWz6gGG7f55VuRSwha9BYSaSEFV6wkV3PiJp1KDtSaCYU-0000000000000000-7b5a152aefbc486b919be1541b416d46f0fb59630c6355b8c8b5ebf92ba89dfb
+2023-12-18T10:30:24.877+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZ8CMLn738Rn26sPTDEVUjkxECHq7SCF7j5ncwZtoqZwC-0000000000000000-ce17759df8faa936ec357a04e27af23655584e5207fe1e4fe65017fdefa0f55c
+2023-12-18T10:30:24.982+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmcdz9JrHnCkdiHPanbMwUsRyDtxNehUvX8ChYgFszLmcm-0000000000000000-0976a075c89aed96a0b0103b2998abd68c36963e4ef84e896b862f832c8a9c40
+2023-12-18T10:30:25.094+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYgN3p38ziGRsL6M8DSzNWsZUcv5FKKBPrckg9DuKfvkM-0000000000000000-e2840b615b2237a93345df40a5f9ed33ffbee7297f6c74dd1f308b45883cc1b0
+2023-12-18T10:30:25.192+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmexF896HmHBDzJtrCaHFYPUzwE8LMv5ghfgcSQf9KNNyL-0000000000000000-24c70691ea6d0a0f45e49e52c02ac0fb73f02994b2c1e62ada290967eed61223
+2023-12-18T10:30:25.299+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmeex694bSXq2f2gmxzRNf6ZVGJ45HMjRnGzaJtQLiBa8H-0000000000000000-42ebc368975142d6b1659d6d10c06047aded51944fda1dc1ac41317fb99db8c8
+2023-12-18T10:30:25.404+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWuWmtbLRLom7xq7Gh1nSC128EqxG3wfUtLFbx3LJZj3C-0000000000000000-635fb1ab3e9f90398d37c159873af20372bed0b78cbae29eae60605abb44eb39
+2023-12-18T10:30:25.504+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYiQuE9dZJx7ALDVdxsf79uEUrGXqvmDhR5HQYSTM4x9N-0000000000000000-0ad7c28c98a5676de53dfc1ca302932f58da8c18798160eab615298901dab6fe
+2023-12-18T10:30:25.613+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmaRNtn1KS32nk7vNtt68BAH1CnPMKS1paCmbvqUCz4ZVC-0000000000000000-2db9c2ac03bf9efc4bc73489dc600b0ae3bb3bfbc4c9de49ebbcabb782ff7e9a
+2023-12-18T10:30:25.718+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmaaqDjsz23Pr1AmBu9peyWftctfY3HkxVwddX3LQdJyKU-0000000000000000-127b65fe4176b13753134f0784b1746af5361cbec82cc10a3e755b22e6fea1ba
+2023-12-18T10:30:25.821+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmTzpufrG8G3oMPvFqZt4X3n3MKwqS63R3B7WFz1xUKYWc-0000000000000000-7d3509c279d9845a90a6af5cb4bdfc122b9c9b7dbedfae5bcd559f278a619d93
+2023-12-18T10:30:25.924+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmckHED1C2VsRhJZmWGH8ER7DXoydciNue4vcWNdfTwHFb-0000000000000000-bb88f98db00778c6346749aa1c9c2dcedb4794ff05e02b4afd0e75bac1834e47
+2023-12-18T10:30:26.029+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmVfNSdx7CM1P2MmZe8LQCcXYeFuhf3rQktHjeCi1XmrzL-0000000000000000-9f0e823ff53ea798908d32dcd99693eedd25419e8ab697e13a7eb5f65b7cc182
+2023-12-18T10:30:26.135+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmYHdRcedUfbpNEt1batT9o7E8wvYLCRvSJWwnDgucvBgv-0000000000000000-c76525666ef033830a064cc256d8caf702c2a71c59c0967f59fe433b426e9e02
+2023-12-18T10:30:26.241+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZHi6Uk6ZSwJ7P29gZ9EjMKM9Mprnu5J2UyRbhXtHLS2n-0000000000000000-1bd377e3fb2d7f2bb033482a6069c6484801a4dbed1c1b0ef6395aa9171f848b
+2023-12-18T10:30:26.347+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmdsXHoeZtobQCpknhaMbtY4Nqc3X7yufaAcxBFUMeEVCB-0000000000000000-a697eba9993acd0157bc2bb5eb53d82fed14fffd9bdbf97181fd6ba5edeb47d5
+2023-12-18T10:30:26.447+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQsedEd5Fd5k9M9pWnNgEJqwENeXUyeXhEHs8QCMPFZK9-0000000000000000-a9dc720b3eff42482b128438ae8d74595356ae6906cfff3249d594362a83487f
+2023-12-18T10:30:26.548+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmWE7MriK34di81EZUqzmijTEpZf7Tjm8c3afn4v2JmuWr-0000000000000000-c3b37bf8d4cb380f5cbd913237fe6245ebe477672a311f719d079aa57786d833
+2023-12-18T10:30:26.652+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmUatvkox26eGiPVGdNpZuhiSo5nyk3mbRXn2Rz7QsjLrX-0000000000000000-3e7760d925a05cc337e0d644d0b85676bbf57b86cf6e73aa130296e2f3311afb
+2023-12-18T10:30:26.758+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmT5V6PYg4mtn4G5BLFyy7Ns8c1YEuJ8hs8UwFfWVrSESp-0000000000000000-dd08caa10e4fa29103263454754f85ea76da0cf2f3d653734ced0de647028620
+2023-12-18T10:30:26.860+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZEFmjYCH7MsNKcJsimsArpyhcTtxjedqD51qnQTpK3Ku-0000000000000000-6efe0ca8f7bb939c76537f5716f1b688929807852e2a96130e38358d915c0ecc
+2023-12-18T10:30:26.964+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmVUzQw6dpm7bUWTHQqcf2JeFy1REyqDny5sbnpeUwd8tH-0000000000000000-ed5de6c8c4b267411c938a98db280782e775ac0d4a2d48034f17e9a16b2c4d9a
+2023-12-18T10:30:27.071+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmbnUCHYaoXd8mJ9chCQEStBtgJM5dzUEYFwdweyYAAxUw-0000000000000000-11cd4db6b794a6d6d2d720e991092bae5e0597a9d921f7ab905413a8e97474ae
+2023-12-18T10:30:27.177+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmd73ryJMUrvWTCNtvnT6yXvMc65NM3tKXNPpWfTD5Rmgg-0000000000000000-b37f68f51d46ae253332d144bcfa9b3039b20e124520af10d77573db27cd7f3c
+2023-12-18T10:30:27.282+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmeKkD3aGfJPig6Z7pxDud8th3A4hjMJMQNaTFpfa6Swkf-0000000000000000-3ab69c8f052c8c56082f0592dadf1afae627366229e54496caa88ce1f68be939
+2023-12-18T10:30:27.387+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmPGu1su6EGrMTAZ2Jmt3Ti9tuHe9P9WibXthfoHKWNzd6-0000000000000000-8d619fe707bd7e7bf357afb4a810a0a7720930cc83eb1ba4d50b4ba9d493b2b1
+2023-12-18T10:30:27.484+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmbu5BH5nvADe7fYAfEkA4w63k4v5BaHnZ3hgDHqR1eQa1-0000000000000000-8154a4fc0e7a22665f21a0105ad4130d3004031080875445f470b8df7e971fcd
+2023-12-18T10:30:27.588+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmRZaHNHuuhZviY3sCaFrZeXCcrCdDTMV4Y59qr8RF21Wq-0000000000000000-ae691988597f9363ec79cc46c13f4b598d2dba7f007767a824e04b9ad8337c64
+2023-12-18T10:30:27.693+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmZDpmeLcaDc7Y9RegGWSiT25XW2UVmKGsY3C23qkfjeuj-0000000000000000-734a8bca7b812124d01f703bab8a1319df84fce9ff709dde77ba2f46ff3ea0d7
+2023-12-18T10:30:27.798+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmceqXoLmZCjVjzTwDGgKAww8Hj9TcJgim31Sx7ZYWQCdN-0000000000000000-d79d35a597504180d55d181c649aa33ea5ce8a130a85d5b85c479971b418eeff
+2023-12-18T10:30:27.903+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmRjTj1TRTqkcWU2AZbK6w3cZNEuubtmdud2CWzMqGszUj-0000000000000000-5d327846c5e5ad31c5b9a5d701c4875be4c5be93f5e47d3a82ea9f472a4c9d11
+2023-12-18T10:30:28.009+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmQqYkiquqySBXC8MNXdNjx493mNpH19q4aMR7RuAKtBK9-0000000000000000-9454fd53d791e704ebd6ecb906fad6032e62fa0984bf747263f046b210b9a1bb
+2023-12-18T10:30:28.115+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNw4soJsjoZd3vrx8PjpaH6LkzJHrjsx9EFzcKhLpLu9g-0000000000000000-21ef3c7057d88aa8d2c5a28acaeec4e6d3e8e4d38abe91f33583f64817b254ec
+2023-12-18T10:30:28.220+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmVkHy4GH5fGegKRwsu5JAWFF1FXgHEVF9QWkiB8jkFdt8-0000000000000000-25a4cc0e45af9f58fa9ac9737d8e80da6ecd39df5ec028143dd8f451b5bf1855
+2023-12-18T10:30:28.318+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmVzBrN6ktEKMMPacmA7QTwkuBrTapjTE9mzkP3uFPRbci-0000000000000000-879505d1cf2d5d4d49e8b0d12d16d4fccdfe75fbaac67aba6dee2cc342d11ed2
+2023-12-18T10:30:28.421+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmPg3efbW9qgWYYVbzKH37GBPNm4qhpTkpX7dwH2iqrpZD-0000000000000000-7a467ecc3a39da789b14b895dc7c7595598c912f76e1e32d4654cded3f9654b8
+2023-12-18T10:30:28.523+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-Qmc2MCXwpP3J9aoNN9KZDEG8FX1jFj66xUvj95SVPt7uD4-0000000000000000-cc1c5a4ec219bfe50acb44c219093b6f4140a7eab5263c8b8b20eba6589138ad
+2023-12-18T10:30:28.628+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNZVVVKan1orxWjxcr4JYXyiLRML1NMy5tufEHTAhKov1-0000000000000000-0de3479b0bb03297ce5aa41a55c1dc56825122e5405e55c2efab38deaa5b4d99
+2023-12-18T10:30:28.735+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmaikkdZvLHZEfCPCRTunDH4emnCyj4qupMg4gxsNu9SRt-0000000000000000-b0705731951c82bceba565cf69467d227ee7f860128bb84fa9c37924cb38715b
+2023-12-18T10:30:28.838+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmdwiKpSbmoDQgtvbgThfmHMPmY3Bh8rXPsWXGRcQixLsE-0000000000000000-696dec29487c5a8d8d3d8572b85b89edab2b941ffaf7f0a9d64578bdb61be4ef
+2023-12-18T10:30:28.941+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmSkD67TpKhsXrZBsCK2SxayViwryZjtQkhxktAXdJdo8D-0000000000000000-fdbb075cdae9300c734fc55e7b6181467a6082155cc0a65b9aae72bf8297f6c3
+2023-12-18T10:30:29.046+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmPVdSisxpRmuCSZw4oCCsmyifUdWsmGrGDyaFxRXJp5wb-0000000000000000-84c4effac53dc02367faef9380d7828f3661a492434d988cd6bd93a00be3085c
+2023-12-18T10:30:29.153+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNR539rQYoD26LEzsbzUfpWJqnpaoJpWBTvZ7MnYtjExK-0000000000000000-e899e86aaf27ec7beaf91a78bcdcb66840e34fa0eaf1258a6dd78bc068833eb1
+2023-12-18T10:30:29.252+0530 [DEBUG] Main.Core.wallet: Writtent: key=tt-QmNd2aGY22VoSQosHGJDucVFPyqEVbL5tZfMuzGigRnE7K-0000000000000000-c38912624b4a0dd0d3ec6f291af2c11ffdda3e700ac1fe69f9212bf6fb505442
+2023-12-18T10:31:58.003+0530 [INFO]  Main.Core.unpledge: Unpledging started
+2023-12-18T10:31:58.003+0530 [INFO]  Main.Core.unpledge: All tokens are unplegded
+2023-12-18T10:32:21.318+0530 [INFO]  Main.Core.unpledge: Unpledging started
+2023-12-18T10:32:21.319+0530 [INFO]  Main.Core.unpledge: All tokens are unplegded
+2023-12-18T11:45:30.546+0530 [ERROR] Main.Core: failed to get data tokens: err="no records found"
+2023-12-18T11:45:30.547+0530 [ERROR] Main.Core: Commit data token failed, failed to get data token: err="no records found"
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: Create data token
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: initating data token
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: Creating data token: rt="{7 bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda 0 1  1  map[] map[] map[] map[] <nil>}"
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: DID names: DID names=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: reqID is : reqID=D7E56B39-636D-485A-980A-9215B98F9B0F
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: dr.DID is : dr.DID=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core.wallet: did value passed inside is: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core.wallet: db print DID: did=<nil>
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core.wallet: GetDID: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:37.167+0530 [DEBUG] Main.Core: dt is: dt="&{bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda 0 root 0 }"
+2023-12-18T11:45:42.284+0530 [DEBUG] Main.Core.wallet: did value passed inside is: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:42.284+0530 [DEBUG] Main.Core.wallet: db print DID: did=<nil>
+2023-12-18T11:45:42.284+0530 [DEBUG] Main.Core.wallet: GetDID: did=bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda
+2023-12-18T11:45:42.284+0530 [DEBUG] Main.Core: dt is: dt="&{bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda 0 root 0 }"
+2023-12-18T11:45:46.384+0530 [ERROR] Main.Core.explorerclient: Http Request failed with status 403
+2023-12-18T11:45:46.384+0530 [DEBUG] Main.Core: dts is : dts=map[bafybmiftzmyyycw5h2ctw6ynyzgs7iy546j5slqf6dit6acbq2puhtlvda:QmUNUXBtcCxmPrrWdcsi6dsp91wbnp3tTgwTtdG2WEod1L]
+2023-12-18T12:13:46.843+0530 [DEBUG] Main.Core: Call back URL registered successfully
+2023-12-18T12:19:06.502+0530 [ERROR] Main.Core.wallet: Failed to write smart contract token: err="UNIQUE constraint failed: callbackurl.smart_contract_hash"
+2023-12-18T12:19:06.504+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-18T12:21:22.182+0530 [DEBUG] Main.Core: Call back URL registered successfully
+2023-12-18T12:21:22.183+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-18T12:21:22.183+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-18T12:21:22.183+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-18T12:29:02.200+0530 [DEBUG] Main.Core: Call back URL registered successfully
+2023-12-18T12:29:02.201+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-18T12:29:02.201+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-18T12:29:02.201+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-19T11:11:22.099+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-19T11:11:22.130+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-19T11:11:22.130+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-19T11:11:22.130+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-19T11:11:22.130+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-19T11:11:22.130+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core: 
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core: 
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-19T11:11:22.176+0530 [INFO]  Main.Core: 
+2023-12-19T11:11:22.220+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-19T11:11:22.220+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-19T11:11:22.221+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-19T11:11:22.222+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-19T11:11:22.222+0530 [INFO]  Main.Core: Setting up the core
+2023-12-19T11:11:22.224+0530 [INFO]  Main.Core: Starting the core
+2023-12-19T11:11:22.224+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2023-12-19T11:11:22.224+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2023-12-19T11:11:22.224+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-19T11:11:22.224+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-19T11:11:22.224+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-19T11:11:22.224+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-19T11:11:22.224+0530 [INFO]  Main: Starting server...
+2023-12-19T11:11:22.224+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-19T11:11:22.224+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2023-12-19T11:39:01.565+0530 [ERROR] Main.Core.quorum_manager: Failed to write to quorum storage: err="UNIQUE constraint failed: quorummanager.address"
+2023-12-19T11:41:18.220+0530 [ERROR] Main.Core.wallet: Failed to write smart contract token: err="UNIQUE constraint failed: callbackurl.smart_contract_hash"
+2023-12-19T11:41:18.221+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-19T11:43:45.315+0530 [DEBUG] Main.Core: Call back URL registered successfully
+2023-12-19T11:43:45.316+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-19T11:43:45.316+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-19T11:43:45.316+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-19T11:55:54.459+0530 [ERROR] Main.Core.wallet: Failed to write smart contract token: err="UNIQUE constraint failed: callbackurl.smart_contract_hash"
+2023-12-19T11:55:54.460+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-19T11:55:54.460+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-19T11:55:54.460+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-20T10:41:07.817+0530 [ERROR] Main.Core.wallet: Failed to write smart contract token: err="UNIQUE constraint failed: callbackurl.smart_contract_hash"
+2023-12-20T10:41:07.818+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-20T10:41:07.818+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-20T10:41:07.818+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-20T10:43:05.202+0530 [DEBUG] Main.Core: Call back URL registered successfully
+2023-12-20T10:43:05.202+0530 [ERROR] Main.Core: topic already subscribed
+2023-12-20T10:43:05.202+0530 [ERROR] Main.Core: Unable to subscribe smart contract : EXTRA_VALUE_AT_END=
+2023-12-20T10:43:05.202+0530 [INFO]  Main.Core: Subscribing smart contract  is successful
+2023-12-28T11:53:06.668+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2023-12-28T11:53:06.715+0530 [INFO]  Main.Core: Initializing daemon...
+2023-12-28T11:53:06.715+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2023-12-28T11:53:06.715+0530 [INFO]  Main.Core: Repo version: 13
+2023-12-28T11:53:06.715+0530 [INFO]  Main.Core: System version: amd64/linux
+2023-12-28T11:53:06.715+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core: 
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core: 
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2023-12-28T11:53:06.774+0530 [INFO]  Main.Core: 
+2023-12-28T11:53:06.796+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /ip4/10.113.18.33/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.18.0.1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm announcing /ip4/10.113.18.33/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2023-12-28T11:53:06.797+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2023-12-28T11:53:06.799+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWJUVWqo7PAuQyVGSKxfvZ882wjDpN4GpQoop96C9MRox9
+2023-12-28T11:53:06.799+0530 [INFO]  Main.Core: Setting up the core
+2023-12-28T11:53:06.801+0530 [INFO]  Main.Core: Starting the core
+2023-12-28T11:53:06.801+0530 [INFO]  Main.Core.enswebserver: Starting Server at 0.0.0.0:29010
+2023-12-28T11:53:06.801+0530 [INFO]  Main.Core.enswebserver: Server running at : https://0.0.0.0:29010
+2023-12-28T11:53:06.801+0530 [INFO]  Main.grpc: GRPC Server created
+2023-12-28T11:53:06.801+0530 [INFO]  Main.grpc: Running GRPC server...
+2023-12-28T11:53:06.802+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2023-12-28T11:53:06.802+0530 [INFO]  Main: Core version : 0.0.9
+2023-12-28T11:53:06.802+0530 [INFO]  Main: Starting server...
+2023-12-28T11:53:06.803+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2023-12-28T11:53:06.803+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007

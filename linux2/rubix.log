@@ -1,0 +1,121 @@
+[2024-03-05 14:18:50] Starting sessions
+[2024-03-05 14:18:50] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-05 14:19:50] Starting sessions
+[2024-03-05 14:19:50] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-05 14:20:00] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-05 14:20:10] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-05 14:20:20] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-05 14:20:30] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-05 14:20:40] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-05 14:20:50] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-05 14:21:00] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-05 14:21:10] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-05 14:21:20] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-05 14:21:30] All sessions started[2024-03-05 15:24:01] Starting sessions
+[2024-03-05 15:24:01] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-05 15:24:11] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-05 15:24:21] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-05 15:24:31] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-05 15:24:41] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-05 15:24:51] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-05 15:25:01] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-05 15:25:11] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-05 15:25:21] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-05 15:25:31] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-05 15:25:41] All sessions started
+[2024-03-05 17:33:09] Starting sessions
+[2024-03-05 17:33:09] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-05 17:33:19] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-05 17:33:29] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-05 17:33:39] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-05 17:33:49] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-05 17:33:59] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-05 17:34:09] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-05 17:34:19] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-05 17:34:29] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-05 17:34:39] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-05 17:34:49] All sessions started
+[2024-03-08 12:24:03] Starting sessions
+[2024-03-08 12:24:03] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 12:24:13] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 12:24:23] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 12:24:33] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 12:24:43] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 12:24:53] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 12:25:03] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 12:25:13] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 12:25:23] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 12:25:33] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 12:25:43] All sessions started
+[2024-03-08 08:23:30] Starting sessions
+[2024-03-08 08:23:30] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 08:23:40] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 08:23:50] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 08:24:00] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 08:24:11] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 08:24:21] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 08:24:31] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 08:24:41] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 08:24:51] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 08:25:01] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 08:25:11] All sessions started
+[2024-03-08 10:06:35] Starting sessions
+[2024-03-08 10:06:35] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 10:06:45] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 10:06:56] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 10:07:06] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 10:07:16] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 10:07:26] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 10:07:36] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 10:07:46] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 10:07:56] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 10:08:06] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 10:08:16] All sessions started
+[2024-03-08 10:09:52] Starting sessions
+[2024-03-08 10:09:52] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 10:10:02] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 10:10:12] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 10:10:22] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 10:10:32] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 10:10:42] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 10:10:52] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 10:11:02] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 10:11:13] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 10:11:23] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 10:11:33] All sessions started
+[2024-03-08 15:05:09] Starting sessions
+[2024-03-08 15:05:10] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 15:05:20] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 15:05:30] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 15:05:40] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 15:05:50] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 15:06:00] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 15:06:10] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 15:06:21] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 15:06:31] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 15:06:41] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 15:06:51] All sessions started
+[2024-03-08 15:37:58] Starting sessions
+[2024-03-08 15:37:58] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 15:38:08] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 15:38:18] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 15:38:28] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 15:38:38] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 15:38:48] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 15:38:58] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 15:39:08] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 15:39:18] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 15:39:28] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 15:39:38] All sessions started
+[2024-03-08 16:14:55] Starting sessions
+[2024-03-08 16:14:55] Started session for node0, port: 20000, grpcPort: 10500
+[2024-03-08 16:15:05] Started session for node1, port: 20001, grpcPort: 10501
+[2024-03-08 16:15:15] Started session for node2, port: 20002, grpcPort: 10502
+[2024-03-08 16:15:25] Started session for node3, port: 20003, grpcPort: 10503
+[2024-03-08 16:15:35] Started session for node4, port: 20004, grpcPort: 10504
+[2024-03-08 16:15:45] Started session for node5, port: 20005, grpcPort: 10505
+[2024-03-08 16:15:55] Started session for node6, port: 20006, grpcPort: 10506
+[2024-03-08 16:16:05] Started session for node7, port: 20007, grpcPort: 10507
+[2024-03-08 16:16:15] Started session for node8, port: 20008, grpcPort: 10508
+[2024-03-08 16:16:25] Started session for node9, port: 20009, grpcPort: 10509
+[2024-03-08 16:16:35] All sessions started

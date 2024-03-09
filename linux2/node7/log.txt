@@ -1,0 +1,160 @@
+2024-03-05T15:25:11.858+0530 [INFO]  Main.Core: Initializing IPFS
+2024-03-05T15:25:15.587+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2024-03-05T15:25:15.608+0530 [INFO]  Main.Core: Initializing daemon...
+2024-03-05T15:25:15.608+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2024-03-05T15:25:15.608+0530 [INFO]  Main.Core: Repo version: 13
+2024-03-05T15:25:15.608+0530 [INFO]  Main.Core: System version: amd64/linux
+2024-03-05T15:25:15.608+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2024-03-05T15:25:15.656+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.28.230/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:109d:9443:a263:398d:2dd7:d55f/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:109d:9443:bf41:ff4d:f80c:aba5/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2024-03-05T15:25:25.663+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.28.230/tcp/4009
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:40f3:109d:9443:a263:398d:2dd7:d55f/tcp/4009
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2024-03-05T15:25:25.664+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2024-03-05T15:25:27.677+0530 [INFO]  Main.Core: IPFS daemon requested to close
+2024-03-05T15:25:27.678+0530 [INFO]  Main.Core: IPFS daemon finished
+2024-03-05T15:25:27.688+0530 [INFO]  Main.Core: IPFS Initialized
+2024-03-05T15:25:27.688+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2024-03-05T15:25:27.721+0530 [INFO]  Main.Core: Initializing daemon...
+2024-03-05T15:25:27.721+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2024-03-05T15:25:27.721+0530 [INFO]  Main.Core: Repo version: 13
+2024-03-05T15:25:27.721+0530 [INFO]  Main.Core: System version: amd64/linux
+2024-03-05T15:25:27.721+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2024-03-05T15:25:27.766+0530 [INFO]  Main.Core: 
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.28.230/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:109d:9443:a263:398d:2dd7:d55f/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:109d:9443:bf41:ff4d:f80c:aba5/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.28.230/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:40f3:109d:9443:a263:398d:2dd7:d55f/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2024-03-05T15:25:37.775+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2024-03-05T15:25:37.776+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWHGfP3ZXWu5r2NJsCB6qK7ks6Gaf39iNdUjGtprTYwmp4
+2024-03-05T15:25:37.776+0530 [INFO]  Main.Core: Setting up the core
+2024-03-05T15:25:37.777+0530 [INFO]  Main.Core: Starting the core
+2024-03-05T15:25:37.777+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2024-03-05T15:25:37.778+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2024-03-05T15:25:37.778+0530 [INFO]  Main.grpc: GRPC Server created
+2024-03-05T15:25:37.778+0530 [INFO]  Main.grpc: Running GRPC server...
+2024-03-05T15:25:37.778+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2024-03-05T15:25:37.778+0530 [INFO]  Main: Core version : 0.0.9
+2024-03-05T15:25:37.778+0530 [INFO]  Main: Starting server...
+2024-03-05T15:25:37.778+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2024-03-05T15:25:37.778+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2024-03-05T17:34:21.581+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2024-03-05T17:34:21.605+0530 [INFO]  Main.Core: Initializing daemon...
+2024-03-05T17:34:21.605+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2024-03-05T17:34:21.605+0530 [INFO]  Main.Core: Repo version: 13
+2024-03-05T17:34:21.605+0530 [INFO]  Main.Core: System version: amd64/linux
+2024-03-05T17:34:21.605+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core: 
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core: 
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2024-03-05T17:34:21.653+0530 [INFO]  Main.Core: 
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.28.230/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:2b:2e81:b025:4d17:867a:1d52/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:2b:2e81:dfac:3e82:5640:e7fc/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.28.230/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:40f3:2b:2e81:b025:4d17:867a:1d52/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2024-03-05T17:34:31.658+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2024-03-05T17:34:31.659+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWHGfP3ZXWu5r2NJsCB6qK7ks6Gaf39iNdUjGtprTYwmp4
+2024-03-05T17:34:31.659+0530 [INFO]  Main.Core: Setting up the core
+2024-03-05T17:34:31.660+0530 [INFO]  Main.Core: Starting the core
+2024-03-05T17:34:31.660+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2024-03-05T17:34:31.661+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2024-03-05T17:34:31.661+0530 [INFO]  Main.grpc: GRPC Server created
+2024-03-05T17:34:31.661+0530 [INFO]  Main.grpc: Running GRPC server...
+2024-03-05T17:34:31.661+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2024-03-05T17:34:31.661+0530 [INFO]  Main: Core version : 0.0.9
+2024-03-05T17:34:31.661+0530 [INFO]  Main: Starting server...
+2024-03-05T17:34:31.661+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2024-03-05T17:34:31.661+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
+2024-03-08T12:25:15.728+0530 [INFO]  Main.Core: Waiting for IPFS daemon to start
+2024-03-08T12:25:15.750+0530 [INFO]  Main.Core: Initializing daemon...
+2024-03-08T12:25:15.750+0530 [INFO]  Main.Core: Kubo version: 0.19.2
+2024-03-08T12:25:15.750+0530 [INFO]  Main.Core: Repo version: 13
+2024-03-08T12:25:15.750+0530 [INFO]  Main.Core: System version: amd64/linux
+2024-03-08T12:25:15.750+0530 [INFO]  Main.Core: Golang version: go1.19.8
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core: 
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core: Computed default go-libp2p Resource Manager limits based on:
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxMemory': "8.2 GB"
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core:     - 'Swarm.ResourceMgr.MaxFileDescriptors': 524288
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core: 
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core: Theses can be inspected with 'ipfs swarm resources'.
+2024-03-08T12:25:15.804+0530 [INFO]  Main.Core: 
+2024-03-08T12:25:15.817+0530 [INFO]  Main.Core: Swarm is limited to private network of peers with the swarm key
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm key fingerprint: e5b34b687a4f51be1e700825ad8de4ef
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip4/127.0.0.1/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip4/172.17.0.1/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip4/192.168.130.230/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:1f:480e:65bf:8f3c:42a7:4b12/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip6/2409:40f3:1f:480e:8e71:95d:aa9f:732e/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /ip6/::1/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm listening on /p2p-circuit
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm announcing /ip4/127.0.0.1/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm announcing /ip4/192.168.130.230/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm announcing /ip6/2409:40f3:1f:480e:65bf:8f3c:42a7:4b12/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: Swarm announcing /ip6/::1/tcp/4009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: API server listening on /ip4/127.0.0.1/tcp/5009
+2024-03-08T12:25:15.818+0530 [INFO]  Main.Core: WebUI: http://127.0.0.1:5009/webui
+2024-03-08T12:25:15.819+0530 [INFO]  Main.Core: Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8088
+2024-03-08T12:25:15.819+0530 [INFO]  Main.Core: IPFS Daemon is ready
+2024-03-08T12:25:15.821+0530 [INFO]  Main.Core: Node PeerID : 12D3KooWHGfP3ZXWu5r2NJsCB6qK7ks6Gaf39iNdUjGtprTYwmp4
+2024-03-08T12:25:15.822+0530 [INFO]  Main.Core: Setting up the core
+2024-03-08T12:25:15.851+0530 [INFO]  Main.Core: Starting the core
+2024-03-08T12:25:15.851+0530 [INFO]  Main.Core.enswebserver: Starting Server at localhost:29010
+2024-03-08T12:25:15.852+0530 [INFO]  Main.Core.enswebserver: Server running at : https://localhost:29010
+2024-03-08T12:25:15.852+0530 [INFO]  Main.grpc: GRPC Server created
+2024-03-08T12:25:15.852+0530 [INFO]  Main: Swagger URL : http://localhost:20007/swagger/index.html
+2024-03-08T12:25:15.852+0530 [INFO]  Main: Core version : 0.0.9
+2024-03-08T12:25:15.852+0530 [INFO]  Main: Starting server...
+2024-03-08T12:25:15.853+0530 [INFO]  Main.grpc: Running GRPC server...
+2024-03-08T12:25:15.853+0530 [INFO]  Main.enswebserver: Starting Server at localhost:20007
+2024-03-08T12:25:15.853+0530 [INFO]  Main.enswebserver: Server running at : http://localhost:20007
